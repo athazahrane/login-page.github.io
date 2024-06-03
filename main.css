@@ -25,7 +25,7 @@ body {
     padding: 15px;
     border: 1.5px solid rgb(94, 198, 240);
     border-radius: 5px;
-    box-shadow: 20px 20px 0 skyblue;
+    box-shadow: 20px 20px 0 rgb(123, 202, 236);
 }
 .title-card {
     text-align: center;
@@ -60,11 +60,8 @@ input.form-control:focus {
 input.form-control.invalid:focus {
     box-shadow: 0 0 0 .2em rgba(228, 116, 116, 0.434);
 }
-.form-control.password:invalid {
+.form-control.password.invalid {
     border: 1.5px solid salmon;
-}
-.form-control.password:focus:invalid {
-    box-shadow: 0 0 0 .2em rgba(228, 116, 116, 0.434);
 }
 p.validation-alert.show {
     color: salmon;

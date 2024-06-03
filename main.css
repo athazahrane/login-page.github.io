@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a {
+    color: rgb(74, 182, 224);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card-login {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 15px;
+    border: 1.5px solid rgb(94, 198, 240);
+    border-radius: 5px;
+    box-shadow: 20px 20px 0 skyblue;
+}
+.title-card {
+    text-align: center;
+    text-transform: uppercase;
+}
+.input-content {
+    margin: 10px 0;
+}
+label {
+    display: block;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+label::after {
+    content: " *";
+    color: salmon;
+}
+input.form-control {
+    width: 100%;
+    padding: 7px 15px;
+    border: 1.5px solid rgb(204, 207, 209);
+    border-radius: 5px;
+    outline: none;
+}
+input.form-control.invalid {
+    border: 1.5px solid salmon;
+}
+input.form-control:focus {
+    box-shadow: 0 0 0 .2em rgba(116, 200, 228, 0.434);
+}
+input.form-control.invalid:focus {
+    box-shadow: 0 0 0 .2em rgba(228, 116, 116, 0.434);
+}
+.form-control.password:invalid {
+    border: 1.5px solid salmon;
+}
+.form-control.password:focus:invalid {
+    box-shadow: 0 0 0 .2em rgba(228, 116, 116, 0.434);
+}
+p.validation-alert.show {
+    color: salmon;
+    display: block;
+}
+p.validation-alert {
+    display: none;
+    font-size: .8em;
+}
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.help {
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
+    margin-top: 10px;
+}

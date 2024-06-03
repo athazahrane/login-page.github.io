@@ -16,19 +16,20 @@
         <form>
             <div class="input-content">
                 <label for="email">email</label>
-                <input type="email" class="form-control email" required>
-                <p class="validation-alert">your email is incorrect. please check your email is correctly!</p>
+                <input type="email" class="form-control email" id="email" required>
+                <p class="validation-alert"></p>
             </div>
             <div class="input-content">
                 <label for="password">password</label>
-                <input type="password" class="form-control password" required pattern=".{6,}">
+                <input type="password" class="form-control password" id="password" required pattern=".{6,}">
+                <p class="validation-alert"></p>
             </div>
             <button type="submit" class="btn-submit">Login</button>
             <div class="help">
                 <p>don't have an account? <a href="#">click here</a></p>
             </div>
         </form>
-    </div>
+    </div>    
 
     <script src="main.js"></script>
 </body>
